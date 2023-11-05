@@ -62,13 +62,11 @@ This endpoint uses Firebase auth to create a custom_token if credentials are val
 
 ![2](https://github.com/Kavisha20340/assignment/assets/56486195/c7794913-13f0-4806-9b62-7c9b88249c92)
 
-When the login is successful, a custom token is returned in reponse that will be used for further authentication as shown below:  
+When the login is successful, a custom token is returned in reponse. Now we will sign in using our custom token using Identity Platform API since our application has no frontend:  
 
 ![3](https://github.com/Kavisha20340/assignment/assets/56486195/213de196-c820-40db-aa0a-518e252a6110)
-
-Here, we are signing in with the custom token by passing it to the request headers and using Identity Platform API since our application has no frontend.
     
-#### View Profile
+### View Profile
 
 This endpoint implements a protected view that is only accessible with a valid token. This returns user information in response.
 
@@ -80,9 +78,11 @@ This endpoint implements a protected view that is only accessible with a valid t
 
 **Authorization**: custom_token
 
+Here, we are going to access the protected view by passing the id_token in the request as a authorization header.
+
 ![4](https://github.com/Kavisha20340/assignment/assets/56486195/af638fa6-2db7-4999-8a80-2f7c4f70410a)
 
-##### Edit Profile
+### Edit Profile
 
 This endpoint also implements a protected view that is only accessible with a valid token. This enables to update user information and returns updated user information in reponse
 
@@ -93,5 +93,7 @@ This endpoint also implements a protected view that is only accessible with a va
 **Payload**: username, password
 
 **Authorization**: custom_token
+
+Here, we are going to access the protected view by passing the id_token in the request as a authorization header.
 
 ![5](https://github.com/Kavisha20340/assignment/assets/56486195/0f82cc32-14f3-48b3-9755-a29ef81618ca)
