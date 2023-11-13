@@ -84,30 +84,29 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default':
-        {
-            'ENGINE': 'djongo',
-            'NAME': 'test_db',
-            'CLIENT':
-                {
-                    'host':
-                        'mongodb+srv://kavisha:chhaya'
-                        '@<cluster0.i4gpr5u.mongodb.net/test_db'
-                        '?retryWrites=true&w=majority'
-                }
-        }
-}
-
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'djongo',
-#         'NAME': 'test_db',
-#         'HOST': 'localhost',
-#         'PORT': 27017, 
-#     }
+#     'default':
+#         {
+#             'ENGINE': 'djongo',
+#             'NAME': 'test_db',
+#             'CLIENT':
+#                 {
+#                     'host':
+#                         'mongodb+srv://kavisha:chhaya'
+#                         '@<cluster0.i4gpr5u.mongodb.net/test_db'
+#                         '?retryWrites=true&w=majority'
+#                 }
+#         }
 # }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'test_db',
+        'HOST': 'localhost',
+        'PORT': 27017, 
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
