@@ -1,6 +1,6 @@
 # Django REST API with custom token based authentication with Firebase
 
-This is a Django project that implements custom token-based authentication with Firebase for registering a user, logging in and authorizing a user to access protected views.
+This is a Django project that implements custom token-based authentication with Firebase for registering a user, logging in and authorizing a user to access protected views. It has been developed in fulfillment of an assignment given by BeWyse for SDE Intern 
 ## Features
 
 - MongoDB to store user data 
